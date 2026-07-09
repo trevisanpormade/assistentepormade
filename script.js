@@ -5,24 +5,89 @@ const defaultDatabase = [
     response: "Eu entendo perfeitamente. Quando o cliente olha só para o preço, realmente pode parecer uma decisão maior. Mas o valor do produto está ligado ao resultado que ele entrega: mais segurança na escolha, economia de tempo e uma solução pensada para evitar retrabalho.\n\nA ideia não é ser apenas mais uma compra, mas sim resolver um problema que poderia continuar custando tempo, energia e dinheiro se fosse deixado para depois."
   },
   {
-    objection: "Preciso pensar melhor",
-    keywords: ["pensar", "depois", "decidir", "ver com calma", "analisar", "vou ver"],
-    response: "Claro, faz sentido querer pensar com calma. Só vale observar uma coisa: normalmente, quando a pessoa sente que precisa pensar, ainda existe alguma dúvida específica segurando a decisão.\n\nPosso te ajudar a entender exatamente o que ficou em aberto: é sobre o valor, o funcionamento, o resultado esperado ou a forma de pagamento? Assim você decide com muito mais segurança."
+    objection: "Encontrei mais barato",
+    keywords: ["concorrente", "mais barato", "menor preço", "outra empresa", "cotação"],
+    response: "É normal encontrar opções com preços menores. A diferença está no que cada solução entrega. Na Pormade, você recebe um kit completo, desenvolvido para agilizar a instalação, reduzir desperdícios, garantir acabamento superior e contar com suporte técnico durante todo o processo.\n\nMuitas vezes, o que parece mais barato na compra acaba ficando mais caro na instalação, nos ajustes e na manutenção."
   },
   {
-    objection: "Tenho medo de não funcionar para mim",
-    keywords: ["funcionar", "medo", "resultado", "serve", "para mim", "garantia", "dúvida"],
-    response: "Essa dúvida é super comum. O produto foi pensado justamente para ajudar pessoas que ainda não sabem exatamente por onde começar ou que já tentaram outras soluções antes.\n\nO diferencial está na forma como ele conduz o processo: ele não depende apenas de inspiração ou tentativa, mas de um método mais claro, com etapas que ajudam você a aplicar na prática e perceber evolução com mais segurança."
+    objection: "Vou pensar",
+    keywords: ["pensar", "analisar", "depois", "decidir", "avaliar"],
+    response: "Claro, é importante tomar uma decisão com segurança. Só gostaria de deixar um ponto para sua análise: quanto antes definirmos essa etapa, maior a tranquilidade no planejamento da obra, evitando atrasos e garantindo disponibilidade dos produtos.\n\nPosso deixar tudo preparado para que, quando você decidir, o processo seja rápido e sem preocupações."
   },
   {
-    objection: "Vou deixar para comprar depois",
-    keywords: ["depois", "mais tarde", "outro dia", "futuro", "não agora", "próximo mês"],
-    response: "Entendo. Só que muitas vezes deixar para depois mantém o mesmo problema acontecendo por mais tempo.\n\nSe isso já é algo que você percebe que precisa resolver, começar agora pode te poupar tempo e trazer resultado antes. A compra não precisa ser uma decisão impulsiva, mas pode ser uma decisão consciente para sair do mesmo lugar."
+    objection: "Preciso conversar com meu esposo(a) ou sócio",
+    keywords: ["esposa", "marido", "família", "sócio", "decidir junto"],
+    response: "Sem problemas, essa decisão realmente merece ser compartilhada. Posso fornecer todas as informações de forma organizada para facilitar essa conversa.\n\nAssim, vocês conseguem avaliar não apenas o investimento, mas também os benefícios em qualidade, durabilidade, produtividade e tranquilidade que a solução da Pormade oferece."
   },
   {
-    objection: "Não conheço a empresa/produto",
-    keywords: ["não conheço", "confiança", "seguro", "empresa", "produto", "golpe", "quem são"],
-    response: "Faz total sentido querer confiar antes de comprar. Uma boa decisão começa pela segurança.\n\nVocê pode analisar os materiais, ver como o produto funciona, conferir depoimentos e tirar todas as dúvidas antes de seguir. O objetivo é que você compre entendendo exatamente o que está recebendo e por que isso pode fazer sentido para você."
+    objection: "Minha obra ainda está no começo",
+    keywords: ["obra iniciando", "cedo", "depois", "ainda falta", "começo da obra"],
+    response: "Na verdade, este é um dos melhores momentos para planejar. Antecipar essa definição permite acompanhar a obra corretamente, evitar imprevistos e garantir que tudo esteja pronto na fase certa da instalação.\n\nEsse planejamento reduz riscos, evita correria no final da obra e proporciona uma execução muito mais organizada."
+  },
+  {
+    objection: "Ainda não tenho as medidas finais",
+    keywords: ["medidas", "medição", "projeto", "conferir", "tamanho"],
+    response: "Sem problemas. Podemos acompanhar sua obra e programar a medição no momento adequado.\n\nDessa forma, você garante o planejamento da compra sem correr o risco de perder prazo ou comprometer o cronograma da obra."
+  },
+  {
+    objection: "Vou esperar a obra avançar mais",
+    keywords: ["esperar", "mais para frente", "depois", "obra"],
+    response: "Entendo. Mas justamente por acompanhar diversas obras, sabemos que deixar essa decisão para a última hora costuma gerar pressão, aumento de custos e menos opções disponíveis.\n\nAntecipando o planejamento, conseguimos acompanhar cada etapa e garantir uma entrega muito mais tranquila."
+  },
+  {
+    objection: "Já tenho um fornecedor",
+    keywords: ["fornecedor", "parceiro", "compro sempre", "já trabalho"],
+    response: "Isso é ótimo, significa que você valoriza relacionamentos de confiança. A proposta da Pormade não é simplesmente substituir um fornecedor, mas apresentar uma solução que pode trazer mais produtividade, padronização, suporte técnico e redução de retrabalho para sua obra.\n\nVale a pena comparar o custo-benefício completo antes da decisão."
+  },
+  {
+    objection: "Nunca trabalhei com a Pormade",
+    keywords: ["nunca usei", "não conheço", "primeira compra", "empresa"],
+    response: "É natural ter essa dúvida. Por isso acompanhamos todo o processo, desde a especificação até o pós-venda.\n\nNosso objetivo é proporcionar uma experiência segura, oferecendo suporte técnico, produtos padronizados e uma solução desenvolvida para facilitar a execução da obra."
+  },
+  {
+    objection: "Tenho medo de atrasar a entrega",
+    keywords: ["prazo", "atraso", "entrega", "cronograma"],
+    response: "Essa preocupação faz todo sentido. Justamente por isso trabalhamos com planejamento da obra e acompanhamento do cronograma.\n\nNosso objetivo é alinhar produção, entrega e instalação para que tudo aconteça no momento correto, reduzindo riscos de atrasos."
+  },
+  {
+    objection: "Não quero dor de cabeça com instalação",
+    keywords: ["instalação", "mão de obra", "retrabalho", "problema"],
+    response: "Esse é um dos principais diferenciais da Pormade. O Kit Porta Pronta foi desenvolvido para simplificar a instalação, reduzir retrabalho e entregar um acabamento muito mais preciso.\n\nAlém disso, você conta com orientação técnica durante todo o processo."
+  },
+  {
+    objection: "Vou fazer orçamento com outras empresas primeiro",
+    keywords: ["comparar", "orçamento", "concorrência", "cotação"],
+    response: "Sem problemas, comparar faz parte de uma boa decisão. Só sugiro que, além do preço, você compare tudo o que está incluído: qualidade dos materiais, acabamento, garantia, suporte técnico, facilidade de instalação e o impacto que isso terá no andamento da obra.\n\nÉ nesse conjunto que a Pormade entrega seu verdadeiro diferencial."
+  },
+  {
+    objection: "Não estava planejando esse investimento agora",
+    keywords: ["orçamento apertado", "sem previsão", "depois", "investimento"],
+    response: "Compreendo. Porém, planejar essa etapa agora pode evitar custos maiores no futuro.\n\nQuando a compra é organizada com antecedência, a obra ganha previsibilidade, reduz desperdícios e evita decisões tomadas às pressas."
+  },
+  {
+    objection: "Tenho receio da qualidade",
+    keywords: ["qualidade", "resistência", "durabilidade", "acabamento"],
+    response: "É uma preocupação importante. A Pormade investe em processos industriais padronizados, controle de qualidade e soluções desenvolvidas para oferecer durabilidade, excelente acabamento e desempenho ao longo dos anos.\n\nNosso compromisso é entregar um produto que gere confiança desde a instalação até o uso diário."
+  },
+  {
+    objection: "O concorrente entrega a mesma coisa",
+    keywords: ["igual", "parecido", "mesma porta", "mesmo produto"],
+    response: "Pode até parecer semelhante à primeira vista, mas existem diferenças importantes. A Pormade entrega uma solução completa, pensada para aumentar a produtividade da obra, reduzir retrabalho, facilitar a instalação e garantir um acabamento superior.\n\nQuando avaliamos todo o processo, e não apenas o produto isolado, a diferença fica evidente."
+  },
+  {
+    objection: "Não tenho urgência",
+    keywords: ["sem pressa", "depois vejo", "não é prioridade", "mais tarde"],
+    response: "Perfeito. Justamente por não haver urgência, este é o momento ideal para planejar com calma.\n\nAssim conseguimos acompanhar sua obra, organizar todas as etapas e evitar qualquer imprevisto quando chegar o momento da instalação."
+  },
+  {
+    objection: "Quero esperar uma promoção",
+    keywords: ["promoção", "desconto", "oferta", "campanha"],
+    response: "Entendo a expectativa. Porém, mais importante do que um desconto pontual é garantir uma solução que gere economia durante toda a obra.\n\nRedução de desperdícios, menor retrabalho, instalação mais rápida e suporte técnico costumam representar um ganho muito maior do que apenas uma diferença no preço de compra."
+  },
+  {
+    objection: "Tenho medo do pós-venda",
+    keywords: ["garantia", "assistência", "suporte", "pós-venda"],
+    response: "Essa é uma preocupação muito válida. Um dos diferenciais da Pormade é justamente acompanhar o cliente antes, durante e depois da venda.\n\nNosso compromisso não termina na entrega; oferecemos suporte para que todo o processo aconteça da melhor forma possível, trazendo mais segurança para sua decisão."
   }
 ];
 
