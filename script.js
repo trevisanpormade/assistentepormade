@@ -88,6 +88,56 @@ const defaultDatabase = [
     objection: "Tenho medo do pós-venda",
     keywords: ["garantia", "assistência", "suporte", "pós-venda"],
     response: "Essa é uma preocupação muito válida. Um dos diferenciais da Pormade é justamente acompanhar o cliente antes, durante e depois da venda.\n\nNosso compromisso não termina na entrega; oferecemos suporte para que todo o processo aconteça da melhor forma possível, trazendo mais segurança para sua decisão."
+  },
+{
+    objection: "Não tenho instalador de confiança",
+    keywords: ["instalador", "quem instala", "mão de obra", "não conheço instalador", "instalação"],
+    response: "Essa é uma situação muito comum. Pensando nisso, a Pormade conta com a rede Mestres da Instalação, formada por profissionais capacitados e preparados para instalar nossos produtos seguindo os padrões da fábrica.\n\nAssim, você ganha mais segurança, qualidade na execução e evita problemas causados por instalações inadequadas."
+  },
+  {
+    objection: "Meu pedreiro pode instalar",
+    keywords: ["pedreiro", "qualquer um instala", "mão de obra", "instalar"],
+    response: "Pode parecer uma instalação simples, mas o desempenho da porta depende diretamente da forma como ela é instalada. A Pormade recomenda profissionais especializados para garantir alinhamento, vedação, acabamento e funcionamento perfeito.\n\nCom os Mestres da Instalação, você reduz significativamente o risco de retrabalho e preserva toda a qualidade do produto."
+  },
+  {
+    objection: "Tenho receio da instalação dar problema",
+    keywords: ["problema", "instalação", "retrabalho", "erro", "preocupação"],
+    response: "Essa preocupação é totalmente válida. Por isso a Pormade investe não apenas em produtos de alta qualidade, mas também em uma rede de instaladores especializados.\n\nOs Mestres da Instalação seguem procedimentos padronizados, proporcionando mais tranquilidade, rapidez e um acabamento que valoriza o investimento realizado."
+  },
+  {
+    objection: "Já tenho um instalador",
+    keywords: ["meu instalador", "instalador próprio", "equipe", "empreiteiro"],
+    response: "Ótimo! Caso prefira, seu profissional pode realizar a instalação. Mas vale considerar que os Mestres da Instalação conhecem todos os detalhes técnicos dos produtos Pormade e seguem os padrões recomendados pela fábrica.\n\nIsso reduz imprevistos, evita adaptações desnecessárias e garante o melhor resultado possível."
+  },
+  {
+    objection: "Não quero depender de terceiros para instalar",
+    keywords: ["depender", "terceiros", "instalador", "agendamento"],
+    response: "Entendo sua preocupação. Justamente por isso a rede Mestres da Instalação trabalha com planejamento e acompanhamento da obra.\n\nO objetivo é coordenar a instalação no momento correto, proporcionando uma experiência organizada e reduzindo atrasos ou conflitos no cronograma."
+  },
+  {
+    objection: "A instalação vai demorar muito",
+    keywords: ["demora", "tempo", "rápido", "instalação"],
+    response: "Na verdade, um dos grandes diferenciais do Kit Porta Pronta é justamente reduzir o tempo de instalação. Como o produto já chega preparado, o processo é muito mais rápido do que sistemas convencionais.\n\nQuando executado pelos Mestres da Instalação, esse ganho de produtividade é ainda maior, reduzindo impactos no andamento da obra."
+  },
+  {
+    objection: "Se der problema depois, quem resolve?",
+    keywords: ["garantia", "assistência", "problema", "instalação", "pós-venda"],
+    response: "Você não fica sozinho após a compra. A Pormade acompanha todo o processo e conta com suporte técnico para orientar sempre que necessário.\n\nAlém disso, quando a instalação é realizada pelos Mestres da Instalação, todo o processo segue os padrões recomendados pela fábrica, proporcionando ainda mais segurança e tranquilidade."
+  },
+  {
+    objection: "Não quero correr risco de retrabalho",
+    keywords: ["retrabalho", "erro", "refazer", "prejuízo"],
+    response: "Esse é exatamente um dos motivos pelos quais a Pormade desenvolveu todo o seu sistema de instalação. O Kit Porta Pronta aliado aos Mestres da Instalação reduz erros, desperdícios e ajustes durante a obra.\n\nO resultado é mais produtividade, melhor acabamento e menos custos inesperados."
+  },
+  {
+    objection: "Nunca ouvi falar dos Mestres da Instalação",
+    keywords: ["mestres da instalação", "o que é", "como funciona", "instaladores"],
+    response: "Os Mestres da Instalação são profissionais parceiros da Pormade, treinados e qualificados para instalar nossos produtos seguindo os padrões técnicos da fábrica.\n\nIsso garante mais qualidade, segurança, agilidade e uma experiência muito mais tranquila para o cliente durante toda a obra."
+  },
+  {
+    objection: "A instalação especializada deve ser mais cara",
+    keywords: ["instalação cara", "custo da instalação", "mão de obra cara", "valor da instalação"],
+    response: "É comum pensar assim, mas uma instalação especializada costuma representar economia no resultado final. Um serviço bem executado evita retrabalho, desperdício de materiais, ajustes posteriores e possíveis danos ao produto.\n\nCom os Mestres da Instalação, você investe em qualidade desde o início e reduz custos que normalmente aparecem quando a instalação não é feita corretamente."
   }
 ];
 
