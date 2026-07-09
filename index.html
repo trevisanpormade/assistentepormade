@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistente de Objeções</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <p class="tag">Chatbot de Vendas</p>
+      <h1>Assistente de Objeções</h1>
+      <p>Digite uma dúvida ou objeção do cliente e o sistema encontra a melhor resposta com base no banco de soluções.</p>
+    </section>
+
+    <section class="card chat-card">
+      <label for="userQuestion">Pergunta ou objeção do cliente</label>
+      <div class="input-row">
+        <input id="userQuestion" type="text" placeholder="Ex: Achei caro, tem desconto?" />
+        <button id="askBtn">Responder</button>
+      </div>
+      <div id="answerBox" class="answer-box muted">A resposta aparecerá aqui.</div>
+      <div id="matchesBox" class="matches-box"></div>
+    </section>
+
+    <section class="grid">
+      <section class="card">
+        <h2>Cadastrar nova objeção</h2>
+        <label for="objection">Objeção principal</label>
+        <input id="objection" type="text" placeholder="Ex: Preciso pensar melhor" />
+
+        <label for="keywords">Palavras-chave</label>
+        <input id="keywords" type="text" placeholder="pensar, decidir, depois, dúvida" />
+
+        <label for="response">Resposta sugerida</label>
+        <textarea id="response" rows="6" placeholder="Escreva uma resposta humana, clara e persuasiva..."></textarea>
+
+        <button id="saveBtn">Salvar no banco</button>
+      </section>
+
+      <section class="card">
+        <h2>Banco de respostas</h2>
+        <div class="actions">
+          <button id="exportBtn" class="secondary">Exportar banco</button>
+          <label class="file-btn">
+            Importar banco
+            <input id="importFile" type="file" accept=".json" />
+          </label>
+          <button id="resetBtn" class="danger">Restaurar modelo</button>
+        </div>
+        <div id="databaseList" class="database-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
