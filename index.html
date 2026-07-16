@@ -19,41 +19,94 @@
       <div class="input-row">
         <input id="userQuestion" type="text" placeholder="Ex: Achei caro, tem desconto?" />
         <button id="askBtn">Responder</button>
+        <button id="newObjectionBtn" class="secondary" title="Limpar e começar uma nova objeção">Nova objeção</button>
       </div>
       <div id="answerBox" class="answer-box muted">A resposta aparecerá aqui.</div>
       <div id="matchesBox" class="matches-box"></div>
+
+      <!-- Card de imagens relacionadas, aparece quando há correspondência -->
+      <div id="imagesSection" class="card images-section hidden">
+        <button class="card-header" data-collapse-toggle>
+          <h2>Imagens relacionadas</h2>
+          <span class="chevron">▾</span>
+        </button>
+        <div class="card-body">
+          <p id="imagesEmptyMsg" class="muted small"></p>
+          <div id="imagesGrid" class="images-grid"></div>
+        </div>
+      </div>
     </section>
 
     <section class="grid">
-      <section class="card">
-        <h2>Cadastrar nova objeção</h2>
-        <label for="objection">Objeção principal</label>
-        <input id="objection" type="text" placeholder="Ex: Preciso pensar melhor" />
+      <div class="grid-col">
+        <section class="card collapsible collapsed">
+          <button class="card-header" data-collapse-toggle>
+            <h2>Cadastrar nova objeção</h2>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="card-body">
+            <label for="objection">Objeção principal</label>
+            <input id="objection" type="text" placeholder="Ex: Preciso pensar melhor" />
 
-        <label for="keywords">Palavras-chave</label>
-        <input id="keywords" type="text" placeholder="pensar, decidir, depois, dúvida" />
+            <label for="keywords">Palavras-chave</label>
+            <input id="keywords" type="text" placeholder="pensar, decidir, depois, dúvida" />
 
-        <label for="response">Resposta sugerida</label>
-        <textarea id="response" rows="6" placeholder="Escreva uma resposta humana, clara e persuasiva..."></textarea>
+            <label for="response">Resposta sugerida</label>
+            <textarea id="response" rows="6" placeholder="Escreva uma resposta humana, clara e persuasiva..."></textarea>
 
-        <button id="saveBtn">Salvar no banco</button>
-      </section>
+            <button id="saveBtn">Salvar no banco</button>
+          </div>
+        </section>
 
-      <section class="card">
-        <h2>Banco de respostas</h2>
-        <div class="actions">
-          <button id="exportBtn" class="secondary">Exportar banco</button>
-          <label class="file-btn">
-            Importar banco
-            <input id="importFile" type="file" accept=".json" />
-          </label>
-          <button id="resetBtn" class="danger">Restaurar modelo</button>
-        </div>
-        <div id="databaseList" class="database-list"></div>
-      </section>
+        <section class="card collapsible collapsed">
+          <button class="card-header" data-collapse-toggle>
+            <h2>Gerenciar imagens</h2>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="card-body">
+            <p class="small muted">
+              Envie a imagem para a pasta <code>/images</code> do repositório no GitHub e depois
+              registre o nome do arquivo com as palavras-chave que devem puxá-la.
+            </p>
+            <label for="imageFile">Nome do arquivo (ex: kit-porta-pronta.jpg)</label>
+            <input id="imageFile" type="text" placeholder="nome-do-arquivo.jpg" />
+
+            <label for="imageKeywords">Palavras-chave</label>
+            <input id="imageKeywords" type="text" placeholder="instalação, kit porta pronta, retrabalho" />
+
+            <button id="saveImageBtn">Salvar imagem</button>
+
+            <div id="imagesList" class="database-list images-manage-list"></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="grid-col">
+        <section class="card collapsible collapsed">
+          <button class="card-header" data-collapse-toggle>
+            <h2>Banco de respostas</h2>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="card-body">
+            <div class="actions">
+              <button id="exportBtn" class="secondary">Exportar banco</button>
+              <label class="file-btn">
+                Importar banco
+                <input id="importFile" type="file" accept=".json" />
+              </label>
+              <button id="resetBtn" class="danger">Restaurar modelo</button>
+            </div>
+            <div id="databaseList" class="database-list"></div>
+          </div>
+        </section>
+      </div>
     </section>
   </main>
 
+  <!-- Firebase (compat SDK, sem necessidade de build) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
