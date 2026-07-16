@@ -88,7 +88,7 @@ button, .file-btn {
 }
 button:hover, .file-btn:hover { opacity: 0.92; }
 .secondary { background: #9b7b58; }
-.danger { background: #9a4a3f; }
+.danger { background: #9a4a3f; opacity:0; }
 .file-btn input { display: none; }
 .answer-box {
   margin-top: 18px;
